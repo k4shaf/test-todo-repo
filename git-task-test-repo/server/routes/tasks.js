@@ -21,7 +21,6 @@ router.post('/', (req, res) => {
     return res.status(400).json({ error: 'title required' });
   }
 
-  // HACK: we accept raw description for demo; real app would sanitize
   const task = db.createTask({ title, description });
   // TODO: emit event for task.created -> wire to real queue laters
   res.status(201).json(task);
