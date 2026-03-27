@@ -17,7 +17,7 @@ document.getElementById('addTaskForm').addEventListener('submit', async (e) => {
   e.preventDefault();
   const title = document.getElementById('title').value;
   if (!title) {
-    // TODO: show nice UI validation
+    // TODO: show nice UI validation for this
     alert('title required');
     return;
   }
