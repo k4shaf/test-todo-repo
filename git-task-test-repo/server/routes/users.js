@@ -7,7 +7,6 @@ const db = require('../db/mockDb');
 
 // GET /api/users
 router.get('/', (req, res) => {
-  // TODO: filter by role, name
   res.json(db.getUsers());
 });
 
