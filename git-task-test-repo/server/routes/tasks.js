@@ -6,7 +6,6 @@ const router = express.Router();
 const db = require('../db/mockDb');
 
 // GET /api/tasks
-// FIXME: pagination not implemented (risks OOM on large datasets)
 router.get('/', (req, res) => {
   
   const tasks = db.getTasks();
