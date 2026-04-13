@@ -6,7 +6,6 @@ async function renderTasks() {
   const container = document.getElementById('tasks');
   container.innerHTML = '';
   tasks.forEach(t => {
-    // TODO: this is very basic, but you could easily add edit/delete buttons here and call the API to implement those features
     const el = document.createElement('div');
     el.className = 'task';
     el.textContent = `${t.id}: ${t.title} - ${t.description || ''}`;
